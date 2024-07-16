@@ -1,0 +1,8 @@
+// Update documents with name="Holberton school" to add the address attribute
+db.school.update(
+    {name: "Holberton school"},
+    {$set: {address: "972 Mission street"}},
+    {multi: true}
+);
+//print the number of documents updated
+print(db.runCommand({ getLastError: 1}).n + " document(s) updatded");

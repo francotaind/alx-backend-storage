@@ -1,0 +1,3 @@
+//count and display the number of documents in the 'school' collection
+var count = db.school.count();
+print(count);
